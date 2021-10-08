@@ -60,6 +60,12 @@
 	"dependencies": {
 		"@ericrovell/radix": "^0.4.0"
 	},
+	"lint-staged": {
+		".(ts|js|svelte)": [
+			"npm run lint",
+			"npm add"
+		]
+	},
 	"simple-git-hooks": {
     "pre-commit": "npx lint-staged",
     "pre-push": "npm run lint"
