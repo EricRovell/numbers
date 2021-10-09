@@ -61,10 +61,7 @@
 		"@ericrovell/radix": "^0.4.0"
 	},
 	"lint-staged": {
-		".(ts|js|svelte)": [
-			"npm run lint",
-			"npm add"
-		]
+		"*.{ts,js,svelte}": "eslint"
 	},
 	"simple-git-hooks": {
     "pre-commit": "npx lint-staged",
