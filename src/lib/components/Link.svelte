@@ -3,8 +3,8 @@
 	export let targetBlank = false;
 	export let nofollow = false;
 
-	$: target = targetBlank ? "_blank" : "";
 	$: external = href.indexOf("://") !== -1;
+	$: target = (targetBlank || external) ? "_blank" : "";
 
 	$: rel = `${external ? "noopener noreferrer" : ""}` + `${nofollow ? "nofollow" : ""}`;
 </script>
