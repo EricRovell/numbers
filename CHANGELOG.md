@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/ericrovell/numbers/compare/v0.1.0...v0.1.1) (2021-10-12)
+
+
+### Bug Fixes
+
+* **Numbers:** pass options propr to constructor ([0d8c5cc](https://github.com/ericrovell/numbers/commit/0d8c5cc2b950acea3b43b5d6138f2ff7f02e6ab6))
+* setup min ranks for better ux ([9b2dea3](https://github.com/ericrovell/numbers/commit/9b2dea3031b8b2a3b46ef376cd470b6f32e3fbbf))
+
 ## 0.1.0 (2021-10-10)
 
 
