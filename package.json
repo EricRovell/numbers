@@ -58,7 +58,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@ericrovell/radix": "^0.6.0"
+		"@ericrovell/radix": "^0.6.1"
 	},
 	"lint-staged": {
 		"*.{ts,js,svelte}": "eslint"
