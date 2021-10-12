@@ -20,7 +20,7 @@
 	$: base = createRadix(ranks, baseRadix, options);
 
 	function handleChange(event: CustomEvent<MutatedNumber>) {
-		ranks = createRadix(event.detail.ranks, event.detail.radix)
+		ranks = createRadix(event.detail.ranks, event.detail.radix, options)
 			.setRadix(baseRadix)
 			.ranks;
 	}
