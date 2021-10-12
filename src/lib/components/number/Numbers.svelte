@@ -21,7 +21,7 @@
 
 	function handleChange(event: CustomEvent<MutatedNumber>) {
 		ranks = createRadix(event.detail.ranks, event.detail.radix)
-			.setRadix(baseRadix, false)
+			.setRadix(baseRadix)
 			.ranks;
 	}
 </script>
@@ -32,7 +32,7 @@
 			<div>
 				<Number
 					{radix}
-					ranks={base.setRadix(radix, false).ranks}
+					ranks={base.setRadix(radix).ranks}
 					on:ranks-change={handleChange}
 				/>
 			</div>
