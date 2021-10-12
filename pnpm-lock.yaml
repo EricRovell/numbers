@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@ericrovell/radix': ^0.5.0
+  '@ericrovell/radix': ^0.6.0
   '@sveltejs/adapter-static': ^1.0.0-next.20
   '@sveltejs/kit': ^1.0.0-next.180
   '@types/jest': ^27.0.2
@@ -25,7 +25,7 @@ specifiers:
   vite: ^2.6.5
 
 dependencies:
-  '@ericrovell/radix': 0.5.0
+  '@ericrovell/radix': 0.6.0
 
 devDependencies:
   '@sveltejs/adapter-static': 1.0.0-next.20
@@ -399,8 +399,8 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@ericrovell/radix/0.5.0:
-    resolution: {integrity: sha512-PfWDCcbFjBfLoy83fBBgOfsN8a6i+S/gYrY6ZXTW6mULaJCevvN5uxYoi8FLq4va3I/ZeoBFG5KeYSK0+unFYA==}
+  /@ericrovell/radix/0.6.0:
+    resolution: {integrity: sha512-aV7C1v8PIG0tI97/GUQUwTxxZfIkV1KR0BOeqyaseIo1vCkuCCPxf1THPk41pmjT8wmUPtwqk5ePopg44VVIuA==}
     engines: {node: '>=12.0'}
     dev: false
 
