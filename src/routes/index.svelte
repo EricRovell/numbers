@@ -31,6 +31,7 @@
 		<Numbers
 			ranks={[ 0, 0, 0, 0 ]}
 			{radixes}
+			options={{ minRanks: 5 }}
 		/>
 	</section>
 </main>
