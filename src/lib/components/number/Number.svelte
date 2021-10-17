@@ -9,6 +9,7 @@
 	import { createEventDispatcher } from "svelte";
 	import Rank from "./Rank.svelte";
 	import Radix from "./Radix.svelte";
+	import IncrementRank from "./IncrementRank.svelte";
 	import styles from "./style.module.css";
 
 	export let ranks: Array<number> = [ 0 ];
@@ -23,18 +24,31 @@
 			radix
 		});
 	}
+
+	function addRank() {
+		// TODO: move `-32` value into `Number` parameters
+		// id depicts the limit for the number of ranks
+		ranks = [ 0, ...ranks ].slice(-32);
+	}
 </script>
 
 <article class={styles.number}>
-	{#each ranks as value, index (`${index}/${value}`)}
-		<Rank
-			index={index}
-			{value}
+	<section label="controls">
+		<IncrementRank on:click={addRank} />
+	</section>
+	<section label="ranks">
+		{#each ranks as value, index (`${index}/${value}`)}
+			<Rank
+				{index}
+				{value}
+				{radix}
+				on:rank-change={handleChange}
+			/>
+		{/each}
+	</section>
+	<section label="radix">
+		<Radix
 			{radix}
-			on:rank-change={handleChange}
 		/>
-	{/each}
-	<Radix
-		{radix}
-	/>
+	</section>
 </article>
