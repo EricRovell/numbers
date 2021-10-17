@@ -3,8 +3,8 @@
 
 	let radixes = [ 10, 2 ];
 
-	function addNumber(event): void {
-		const data = new FormData(event.target);
+	function addNumber(event: Event): void {
+		const data = new FormData(event.target as HTMLFormElement);
 		const radix = Number(data.get("radix"));
 		radixes = [ radix, ...radixes ].slice(0, 5);
 	}
