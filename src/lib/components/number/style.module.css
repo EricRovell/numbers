@@ -24,19 +24,32 @@
 
 .number {
 	position: relative;
+}
+
+.number,
+.number > section {
 	display: flex;
-	gap: 0.5em;
+	gap: 0.5rem;
+}
+
+.number > section[label="radix"] {
+	position: sticky;
+	right: 0.5rem;
+}
+
+.paper {
+	display: flex;
+	border: var(--border-1);
+	background-color: var(--color-surface-500);
+	border-radius: 5px;
+	padding: var(--space-s);
 }
 
 .rank {
-	display: flex;
+	composes: paper;
 	flex-direction: column;
 	justify-content: space-between;
 	gap: var(--space-s);
-	border: var(--border-l);
-	padding: var(--space-s);
-	border-radius: 5px;
-	background-color: var(--color-surface-500);
 	color: var(--color-gray-800);
 
 	transition: transform 0.25s;
@@ -66,4 +79,43 @@
 	place-content: center;
 	width: 3ch;
 	pointer-events: none;
+}
+
+.controls {
+	--opacity-bg: 0.25;
+	--opacity-border: 0.5;
+
+	composes: paper;
+	place-items: center;
+	border: solid 1px hsl(var(--gray-h) var(--gray-s-600) var(--gray-l-600) / var(--opacity-border));
+	background-color: hsl(var(--surface-h) var(--surface-s-500) var(--surface-l-500) / var(--opacity-bg));
+	cursor: pointer;
+
+	transition: opacity 0.35s, border-color 0.35s;
+}
+
+.controls:hover {
+	--opacity-bg: 0.5;
+	--opacity-border: 0.75;
+}
+
+.controls:focus-visible {
+	--opacity-bg: 0.75;
+	--opacity-border: 1;
+}
+
+.controls > svg {
+	width: 1em;
+	height: 1em;
+	stroke: currentColor;
+	color: var(--color-gray-800);
+}
+
+.radix {
+	composes: paper;
+
+	place-items: center;
+	background-color: var(--color-surface-300);
+	font-size: var(--font-size-5);
+	color: var(--color-gray-800);		
 }
