@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Numbers, Form, InputNumber, Button } from "@components";
+	import { Numbers, Form, InputNumber, Button, Datalist } from "@components";
 
 	let radixes = [ 10, 2 ];
 
@@ -20,6 +20,17 @@
 					name="radix"
 					required
 					placeholder="Add another radix based number"
+					list="radix-aliases"
+				/>
+				<Datalist
+					id="radix-aliases"
+					options={[
+						{ label: "binary", value: 2 },
+						{ label: "ternary", value: 3 },
+						{ label: "octal", value: 8 },
+						{ label: "decimal", value: 10 },
+						{ label: "hexadecimal", value: 16 },
+					]}
 				/>
 				<Button shape="square" variant="accent" appearance="text">
 					+
