@@ -3,7 +3,7 @@
 	import { Icon, iconGithub, svgLogo } from "@components/svg";
 	import { version as appVersion, homepage as appGithub	} from "../../../package.json";
 	import { version as packageVersion, homepage as packageGithub } from "@ericrovell/radix/package.json";
-	import { pathPlayground, pathChallenge, pathManual, pathAbout } from "@core/paths";
+	import { pathPlayground } from "@core/paths";
 	import styles from "./layout-root.module.css";
 
 	import "../styles/normalize.css";
@@ -25,13 +25,13 @@
 			<Navigation.Item href={pathPlayground}>
 				Playground
 			</Navigation.Item>
-			<Navigation.Item href={pathChallenge} pattern={/test/} disabled>
+			<Navigation.Item pattern={/test/} disabled>
 				Challenge
 			</Navigation.Item>
-			<Navigation.Item href={pathManual} pattern={/\/docs/} disabled>
+			<Navigation.Item pattern={/\/docs/} disabled>
 				Manual
 			</Navigation.Item>
-			<Navigation.Item href={pathAbout} pattern={/\/about/} disabled>
+			<Navigation.Item pattern={/\/about/} disabled>
 				About
 			</Navigation.Item>
 		</Navigation.Container>
