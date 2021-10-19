@@ -22,16 +22,16 @@
 	</section>
 	<section label="navigation">
 		<Navigation.Container>
-			<Navigation.Item href={pathPlayground}>
+			<Navigation.Item href="/">
 				Playground
 			</Navigation.Item>
-			<Navigation.Item href={pathChallenge} pattern={/test/} disabled>
+			<Navigation.Item pattern={/test/} disabled>
 				Challenge
 			</Navigation.Item>
-			<Navigation.Item href={pathManual} pattern={/\/docs/} disabled>
+			<Navigation.Item hpattern={/\/docs/} disabled>
 				Manual
 			</Navigation.Item>
-			<Navigation.Item href={pathAbout} pattern={/\/about/} disabled>
+			<Navigation.Item pattern={/\/about/} disabled>
 				About
 			</Navigation.Item>
 		</Navigation.Container>
