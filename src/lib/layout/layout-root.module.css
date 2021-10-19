@@ -21,17 +21,18 @@
 	justify-self: start;
 }
 
+.logo {
+	display: flex;
+	place-content: center;
+	gap: var(--space-s);
+}
+
 .header > section[label="navigation"] {
 	grid-area: navigation;
 }
 
 @media screen and (max-width: 600px) {
-	header {
-		grid-template: 1fr / repeat(2, 1fr);
-		grid-template-areas: "navigation controls";
-	}
-
-	section[label="logo"] {
+	.logo > span {
 		display: none;
 	}
 }

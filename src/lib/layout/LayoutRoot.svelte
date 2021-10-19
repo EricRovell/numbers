@@ -1,5 +1,6 @@
 <script>
 	import { Link, Navigation } from "@components";
+	import { Icon, iconGithub, svgLogo } from "@components/svg";
 	import { version as appVersion, homepage as appGithub	} from "../../../package.json";
 	import { version as packageVersion, homepage as packageGithub } from "@ericrovell/radix/package.json";
 	import { pathPlayground, pathChallenge, pathManual, pathAbout } from "@core/paths";
@@ -14,7 +15,10 @@
 
 <header class={styles.header}>
 	<section label="logo">
-		Numbers
+		<a href="/" class={styles.logo}>
+			<Icon svg={svgLogo} />
+			<span>Numbers</span>
+		</a>
 	</section>
 	<section label="navigation">
 		<Navigation.Container>
@@ -45,7 +49,7 @@
 	</section>
 	<section>
 		<Link href={appGithub}>
-			Github
+			<Icon path={iconGithub} size="1.5em" />
 		</Link>
 	</section>
 </footer>
