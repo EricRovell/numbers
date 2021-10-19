@@ -3,6 +3,7 @@
   export let placeholder: string | undefined = undefined;
 
   export let name: string | undefined = undefined;
+  export let list: string | undefined = undefined;
   export let required = false;
   export let min: number | undefined = undefined;
   export let max: number | undefined = undefined;
@@ -17,6 +18,7 @@
   {max}
   {step}
   {name}
+  {list}
   on:input
   on:change
   on:focus
@@ -24,6 +26,7 @@
   on:keydown
   {placeholder}
 >
+<slot />
 
 <style>
   input {
