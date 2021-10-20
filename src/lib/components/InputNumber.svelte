@@ -49,6 +49,6 @@
   input::placeholder {
     font-family: inherit;
     color: inherit;
-    opacity: 0.75;
+    opacity: 0.5;
   }
 </style>
