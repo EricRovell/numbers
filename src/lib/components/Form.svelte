@@ -9,6 +9,7 @@
 		border: var(--border-1);
 		outline: 1px solid var(--outline-color);
 		transition: outline-color 0.5s linear;
+		border-radius: var(--radius-medium);
 	}
 
 	form:focus-within {

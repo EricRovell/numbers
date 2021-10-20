@@ -148,7 +148,7 @@
     height: auto;
     min-width: 5em;
     min-height: 2em;
-    padding: var(--space-xs);
+    padding: var(--space-s);
     border-radius: var(--button-border-radius);
     background-color: hsl(var(--variant-h) var(--variant-s) var(--variant-l) / var(--button-bg-alpha));
     
