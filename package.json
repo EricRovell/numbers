@@ -1,6 +1,6 @@
 {
 	"name": "numbers",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Numbers is simple interactive radix converter.",
 	"scripts": {
 		"lint": "eslint src/**/*.{ts,js,svelte}",
