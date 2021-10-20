@@ -13,7 +13,7 @@
 	overflow-x: auto;
 	scroll-padding-left: 5em;
 	scroll-snap-type: x mandatory;
-	justify-self: center;
+	justify-self: end;
 }
 
 .numbers li > div {

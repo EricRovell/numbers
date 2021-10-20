@@ -14,7 +14,7 @@
 	<section label="controls">
 		<FormRadix on:submit={addNumber} />
 	</section>
-	<section>
+	<section label="number">
 		<Numbers
 			ranks={[ 0, 0, 0, 0 ]}
 			{radixes}
@@ -25,16 +25,27 @@
 
 <style>
 	main {
-		display: grid;
-		gap: var(--space-xl);
-		align-content: start;
-		justify-items: center;
+		--max-width: 940px;
+		--max-width-half: calc(var(--max-width) / 2);
 
+		display: grid;
+		grid-template: min-content auto / 1fr repeat(2, minmax(max-content, var(--max-width-half))) 1fr;
+		gap: var(--space-m);
+		align-content: start;
 		min-height: calc(100vh - 50px);
 		margin: var(--space-xl) 0;
 	}
 
 	section[label="controls"] {
-		width: min(75%, 375px);
+		justify-self: center;
+		grid-row: 1;
+		grid-column: 2 / span 2;
+		width: min(100%, 375px);
+	}
+
+	section[label="number"] {
+		grid-row: 2;
+		grid-column: 1 / span 3;
+		justify-self: end;
 	}
 </style>
