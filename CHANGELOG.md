@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/ericrovell/numbers/compare/v0.1.2...v0.2.0) (2021-10-25)
+
+
+### Bug Fixes
+
+* invisible rank focus ring ([13f0f17](https://github.com/ericrovell/numbers/commit/13f0f1713cc4e0440fd14517014db5bf88fdba1c))
+
 ### [0.1.2](https://github.com/ericrovell/numbers/compare/v0.1.1...v0.1.2) (2021-10-20)
 
 
