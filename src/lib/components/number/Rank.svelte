@@ -21,7 +21,7 @@
 	}
 </script>
 
-<section class={styles.rank}>
+<li class={styles.rank}>
 	<button on:click={() => onChange(1, index)} disabled={max} class:hidden={max}>
 		{Math.min(value + 1, radix)}
 	</button>
@@ -31,7 +31,7 @@
 	<button on:click={() => onChange(-1, index)} disabled={min} class:hidden={min}>
 		{Math.max(value - 1, 0)}
 	</button>
-</section>
+</li>
 
 <style>
 	.hidden {
