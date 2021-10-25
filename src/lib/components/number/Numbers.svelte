@@ -28,14 +28,10 @@
 
 <ul class={styles.numbers}>
 	{#each radixes as radix}
-		<li>
-			<div>
-				<Number
-					{radix}
-					ranks={base.setRadix(radix).ranks}
-					on:ranks-change={handleChange}
-				/>
-			</div>
-		</li>
+		<Number
+			{radix}
+			ranks={base.setRadix(radix).ranks}
+			on:ranks-change={handleChange}
+		/>
 	{/each}
 </ul>
