@@ -32,23 +32,23 @@
 	}
 </script>
 
-<article class={styles.number}>
-	<section label="controls">
+<li class={styles.number}>
+	<section label="ranks" class={styles.ranks}>
 		<IncrementRank on:click={addRank} />
-	</section>
-	<section label="ranks">
-		{#each ranks as value, index (`${index}/${value}`)}
-			<Rank
-				{index}
-				{value}
-				{radix}
-				on:rank-change={handleChange}
-			/>
-		{/each}
+		<ol>
+			{#each ranks as value, index (`${index}/${value}`)}
+				<Rank
+					{index}
+					{value}
+					{radix}
+					on:rank-change={handleChange}
+				/>
+			{/each}
+		</ol>
 	</section>
 	<section label="radix">
 		<Radix
 			{radix}
 		/>
 	</section>
-</article>
+</li>
